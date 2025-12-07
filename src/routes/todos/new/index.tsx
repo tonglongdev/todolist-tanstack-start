@@ -1,4 +1,4 @@
-// import { TodoForm } from '@/components/todo-form'
+import { TodoForm } from '@/components/todo-form'
 import { Button } from '@/components/ui/button'
 import {
   Card,
@@ -35,7 +35,7 @@ function RouteComponent() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          {/* <TodoForm /> */}
+          <TodoForm />
         </CardContent>
       </Card>
     </div>
