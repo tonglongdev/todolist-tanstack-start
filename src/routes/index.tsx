@@ -28,7 +28,7 @@ import {
 } from '@/components/ui/table'
 import { Checkbox } from '@/components/ui/checkbox'
 import { cn } from '@/lib/utils'
-// import { ActionButton } from '@/components/ui/action-button'
+import { ActionButton } from '@/components/ui/action-button'
 import z from 'zod'
 import { todos } from '@/db/schema'
 import { eq } from 'drizzle-orm'
@@ -201,7 +201,7 @@ function TodoTableRow({
               <EditIcon />
             </Link>
           </Button>
-          {/* <ActionButton
+          <ActionButton
             action={async () => {
               const res = await deleteFnServer({ data: { id } })
               router.invalidate()
@@ -211,7 +211,7 @@ function TodoTableRow({
             size="icon-sm"
           >
             <Trash2Icon />
-          </ActionButton> */}
+          </ActionButton>
         </div>
       </TableCell>
     </TableRow>
